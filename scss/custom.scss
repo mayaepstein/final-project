@@ -2,7 +2,87 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+@import url("https://use.typekit.net/hok8jni.css");
+
+$primary: #F2A71D;
+$secondary: #D44B27;
+$success: purple;
+$info: #F4E2CA;
+$warning: purple;
+$danger: purple;
+$light: #F4F1E9;
+$dark: #1E1918;
+
+$navbar-dark-color: #F2A71D;
+$navbar-dark-hover-color: #fff;
+
+$font-family-base: 'New Atten', sans-serif;
+
+$headings-font-family: 'New Spirit', serif;
+$headings-font-weight: bold;
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+.background {
+    background-image: url("../images/welcome-banner.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-background {
+    background-image: url("../images/about.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#carosel {
+    position: relative;
+}
+
+#absolute {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 50%;
+    min-width: 300px;
+}
+
+h6 {
+    font-family: 'New Atten', sans-serif;
+}
+
+.line {
+    border-bottom: 1.5px solid #F4E2CA;
+    background-color: #F4F1E9;
+}
+
+.nav-line {
+    border-bottom: 1.5px solid #F2A71D;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.icon-align {
+    vertical-align: -25%;
+}
+
+.primary-btn:hover {
+    background-color: transparent;
+    color: #F2A71D;
+}

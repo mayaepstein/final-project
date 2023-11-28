@@ -10,8 +10,123 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="py-2 container-fluid text-center bg-dark text-primary nav-line">
+          <div class="row">
+              <a class="navbar-brand col text-center" href="#">
+                  <img src="images/logo.svg" alt="Logo" class="d-inline-block align-self-center">
+              </a>
+              <h5 class="col align-self-center">Vinyl Destination</h5>
+              <span class="material-icons-round col align-self-center">
+                search
+              </span>
+          </div>
+        </div>
+       
+          <nav class="navbar navbar-expand-lg bg-dark nav-line" data-bs-theme="dark">
+              <div class="container-fluid align">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav row text-uppercase">
+                    <li class="nav-item col">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item col">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item col">
+                      <a class="nav-link" href="ourstock.html">Our Stock</a>
+                    </li>
+                    <li class="nav-item col">
+                      <a class="nav-link" href="#">Holds & Orders</a>
+                    </li>
+                    <li class="nav-item col">
+                      <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+      </header>
+      <main>
+        <section id="about-banner" class="py-5 about-background text-light">
+            <div class="container py-5">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h2>About</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="history" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 align-self-center">
+                        <h3>Our History</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat semper vehicula. Maecenas convallis efficitur sapien, lacinia dictum nisl. Donec ut euismod risus, et ultrices tellus. Aenean scelerisque nisi quis nulla varius iaculis. Vestibulum lobortis eros tellus, a consequat leo porttitor non. Nunc tempus purus non tellus vestibulum, volutpat laoreet tortor convallis. Etiam ac magna sagittis, viverra mauris nec, mattis magna. </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/our-history.jpg" class="img-fluid rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-3 line"></div>
+
+        <section id="location" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 align-self-center">
+                        <h3>Location</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat semper vehicula. Maecenas convallis efficitur sapien, lacinia dictum nisl. Donec ut euismod risus, et ultrices tellus. Aenean scelerisque nisi quis nulla varius iaculis. </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="flex-row-reverse">
+                            <img src="images/location.jpg" class="img-fluid rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+      </main>
+      <footer class="py-3 bg-dark text-light">
+        <div class="container-fluid row">
+            <div class="text-center text-primary col-md align-self-center">
+               <h6 class="text-uppercase">Contact us</h6> 
+               
+               <h6><span class="material-icons-round icon-align">
+                call
+                </span>000.000.000</h6>
+               
+               <h6><span class="material-icons-round icon-align">
+                mail
+                </span>info@mail.com</h6>
+            </div>
+            <div class="col-md align-self-center">
+              <img src="images/logo.svg" class="rounded mx-auto d-block py-3" alt="...">
+            </div>
+            <div class="col-md align-self-center">
+                <div class="row row-cols-auto justify-content-center">
+                  <div class="col">
+                      <img src="images/facebook.svg" class="rounded mx-auto d-block" alt="...">
+                  </div>
+                  <div class="col">
+                      <img src="images/twitter.svg" class="rounded mx-auto d-block" alt="...">
+                  </div>
+                  <div class="col">
+                      <img src="images/instagram.svg" class="rounded mx-auto d-block" alt="...">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

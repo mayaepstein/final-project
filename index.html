@@ -10,32 +10,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.svg" alt="Logo" class="d-inline-block align-text-top">
-                Vinyl Destination
-              </a>
+      <div class="py-2 container-fluid text-center bg-dark text-primary nav-line">
+        <div class="row">
+            <a class="navbar-brand col text-center" href="#">
+                <img src="images/logo.svg" alt="Logo" class="d-inline-block align-self-center">
+            </a>
+            <h5 class="col align-self-center">Vinyl Destination</h5>
+            <span class="material-icons-round col align-self-center">
+              search
+            </span>
         </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+      </div>
+     
+        <nav class="navbar navbar-expand-lg bg-dark nav-line" data-bs-theme="dark">
+            <div class="container-fluid align">
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
+                <ul class="navbar-nav row text-uppercase">
+                  <li class="nav-item col">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col">
                     <a class="nav-link" href="#">News</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col">
                     <a class="nav-link" href="ourstock.html">Our Stock</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col">
                     <a class="nav-link" href="#">Holds & Orders</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col">
                     <a class="nav-link" href="about.html">About</a>
                   </li>
                 </ul>
@@ -44,33 +51,31 @@
           </nav>
     </header>
     <main>
-        <section id="hero" class="py-3">
-            <div class="container">
+        <section id="hero" class="py-5 background text-light">
+            <div class="container py-5">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="text-center">
                         <h1>Welcome to Vinyl Destination</h1>
                         <p class="lead">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat semper vehicula. 
                         </p>
-                        <button type="button" class="btn btn-primary">Shop Now</button>
+                        <button type="button" class="btn btn-primary primary-btn">Shop Now</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="carosel" class="py-3">
+        <section id="carosel" class="py-3 bg-light">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner container">
                   <div class="carousel-item active">
-                    <img src="images/new-arrivals.jpg" class="d-block w-100" alt="...">
-                    <h3>Shop our New Arrivals</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat semper vehicula. Maecenas convallis efficitur sapien, lacinia dictum nisl.</p>
+                    <img src="images/new-arrivals.jpg" class="d-block w-100 rounded" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/new-arrivals.jpg" class="d-block w-100" alt="...">
+                    <img src="images/new-arrivals.jpg" class="d-block w-100 rounded" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/new-arrivals.jpg" class="d-block w-100" alt="...">
+                    <img src="images/new-arrivals.jpg" class="d-block w-100 rounded" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -82,40 +87,56 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+              <div class="text-light text-center" id="absolute">
+                  <h3>Shop our New Arrivals</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat semper vehicula. Maecenas convallis efficitur sapien, lacinia dictum nisl.</p>
+              </div>
         </section>
 
-        <section id="about" class="py-3">
+        <div class="py-3 line"></div>
+
+        <section id="about" class="py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 align-self-center">
                         <h3>About Us</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat semper vehicula. Maecenas convallis efficitur sapien, lacinia dictum nisl. Donec ut euismod risus, et ultrices tellus. Aenean scelerisque nisi quis nulla varius iaculis.</p>
                         <button type="button" class="btn btn-secondary">Learn More</button>
                     </div>
                     <div class="col-sm-6">
-                        <img src="images/about.jpg" class="img-fluid" alt="...">
+                        <img src="images/about.jpg" class="img-fluid rounded" alt="...">
                     </div>
                 </div>
             </div>
         </section>
      </main>
-    <footer class="py-3">
-        <div class="container-fluid">
-            <div class="text-center">
-               <h5>Contact us</h5> 
-               <h5>000.000.000</h5>
-               <h5>info@mail.com</h5>
-               <img src="images/logo.svg" class="rounded mx-auto d-block" alt="...">
+    <footer class="py-3 bg-dark text-light">
+        <div class="container-fluid row">
+            <div class="text-center text-primary col-md align-self-center">
+               <h6 class="text-uppercase">Contact us</h6> 
+               
+               <h6><span class="material-icons-round icon-align">
+                call
+                </span>000.000.000</h6>
+               
+               <h6><span class="material-icons-round icon-align">
+                mail
+                </span>info@mail.com</h6>
             </div>
-            <div class="row row-cols-auto justify-content-center">
-                <div class="col">
-                    <img src="..." class="rounded mx-auto d-block" alt="...">
-                </div>
-                <div class="col">
-                    <img src="..." class="rounded mx-auto d-block" alt="...">
-                </div>
-                <div class="col">
-                    <img src="..." class="rounded mx-auto d-block" alt="...">
+            <div class="col-md align-self-center">
+              <img src="images/logo.svg" class="rounded mx-auto d-block py-3" alt="...">
+            </div>
+            <div class="col-md align-self-center">
+                <div class="row row-cols-auto justify-content-center">
+                  <div class="col">
+                      <img src="images/facebook.svg" class="rounded mx-auto d-block" alt="...">
+                  </div>
+                  <div class="col">
+                      <img src="images/twitter.svg" class="rounded mx-auto d-block" alt="...">
+                  </div>
+                  <div class="col">
+                      <img src="images/instagram.svg" class="rounded mx-auto d-block" alt="...">
+                  </div>
                 </div>
             </div>
         </div>
