@@ -6,7 +6,7 @@
 
 $primary: #F2A71D;
 $secondary: #D44B27;
-$success: purple;
+$success: #F2A71D;
 $info: #F4E2CA;
 $warning: purple;
 $danger: purple;
@@ -21,6 +21,7 @@ $font-family-base: 'New Atten', sans-serif;
 $headings-font-family: 'New Spirit', serif;
 $headings-font-weight: bold;
 
+$btn-border-radius: 50%;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -35,6 +36,12 @@ $headings-font-weight: bold;
 
 .about-background {
     background-image: url("../images/about.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.stock-background {
+    background-image: url("../images/our-stock-header.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -85,4 +92,13 @@ h6 {
 .primary-btn:hover {
     background-color: transparent;
     color: #F2A71D;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+.contact-list li img{
+    width: 200px;
 }
