@@ -21,6 +21,17 @@ $font-family-base: 'New Atten', sans-serif;
 $headings-font-family: 'New Spirit', serif;
 $headings-font-weight: bold;
 
+@media (max-width: 768px) { 
+    
+    .center {
+        text-align: center;
+    }
+
+    .button-center {
+        display: block;
+        text-align: center;
+    }
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -91,6 +102,11 @@ h6 {
 .btn-primary:hover {
     background-color: transparent;
     color: #F2A71D;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #F4F1E9;
 }
 
 .btn-secondary:hover {
