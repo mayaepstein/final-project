@@ -21,8 +21,6 @@ $font-family-base: 'New Atten', sans-serif;
 $headings-font-family: 'New Spirit', serif;
 $headings-font-weight: bold;
 
-$btn-border-radius: 50%;
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -46,7 +44,8 @@ $btn-border-radius: 50%;
     background-size: cover;
 }
 
-#carosel {
+#carosel,
+.image-background {
     position: relative;
 }
 
@@ -89,9 +88,14 @@ h6 {
     vertical-align: -25%;
 }
 
-.primary-btn:hover {
+.btn-primary:hover {
     background-color: transparent;
     color: #F2A71D;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: #D44B27;
 }
 
 .contact-list {
@@ -101,4 +105,11 @@ h6 {
 
 .contact-list li img{
     width: 200px;
+}
+
+
+
+.category-images li {
+    list-style-type: none;
+    padding-left: 0%;
 }
